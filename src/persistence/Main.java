@@ -1,22 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package javaapplication3;
 
-/**
- *
- * @author FAMILIA CRUZ
- */
-public class JavaApplication3
+package persistence;
+import java.util.Scanner;
+public class Main
 {
 
-  /**
-   * @param args the command line arguments
-   */
   public static void main(String[] args)
   {
-    // TODO code application logic here
+    Scanner lsScanner = new Scanner(System.in);
+    FileText fileText = new FileText();
+    fileText.setPath("./filel.txt");
+    System.out.println("Ingrese el nombre del archivo");
+    String name= lsScanner.nextLine();
+    System.out.println("Ingrese el contenido del archivo");
+    String content= lsScanner.nextLine();
+    Text text = new Text();
+    text.Text(name, content);
   }
   
 }
