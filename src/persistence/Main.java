@@ -15,6 +15,9 @@ public class Main
     String content= lsScanner.nextLine();
     Text text = new Text();
     text.Text(name, content);
+    ShowFiles showfiles = new ShowFiles();
+    System.out.println("Archivos dentro de la carpeta NetBeansProjects :");
+    showfiles.showFiles("C:\\Users\\FAMILIA CRUZ\\OneDrive\\Documentos\\NetBeansProjects");
   }
   
 }
